@@ -10,7 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <style>  
 body{
-    background-color:#344955;
+    background-color:#C9D7DD;
 }
 .page-title {
     font-family: Arial, sans-serif;
@@ -73,11 +73,11 @@ button{
 
 /*body*/
 .product {
-    background-color: #50727B;
+    background-color: #153448;
     margin-bottom: 20px;
     padding: 20px;
     border-radius: 5px;
-    color: #78A083;
+    color: #eaeaea;
 }
 .product img {
     max-width: 100%;
@@ -96,10 +96,13 @@ button{
 .btn-primary {
     background-color: #007bff !important;
     border-color: #007bff !important;
+    transition: 0.5s;
 }
 .btn-primary:hover {
-    background-color: #0056b3 !important;
-    border-color: #0056b3 !important;
+    background-color: #c9d2dd !important;
+    border-color: #C9D7DD !important;
+    color: #000;
+    transform: scale(1.1);
 }
 
 /*body*/
@@ -115,22 +118,59 @@ footer {
 .details{
     text-align: start;
 }
+.btnn{
+    text-decoration: none;
+    /* font-weight: bold; */
+    font-size: larger;
+    color:#ffffff;
+    padding-left:50px;
+    padding-right: 20px;
+    
+    text-align: center;
+    
+}
+.btnn:hover{
+    text-decoration: underline;
+}
+.tex{
+    text-align: center;
+    margin-right: 330px;
+}
+.plc{
+    border: none;
+    padding: 2px;
+    color:#153448;
+    background-color: #C9D7DD;
+    border-top-left-radius : 12px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-color: #153448;
+    
+}
+.plc::placeholder{
+    color: #153448;
+    padding-left: 14px;
+    
+}
     </style>
 </head>
 <body>
     <!-- Navigation -->
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12 page-title" style="background-color:#35374B;">Reddy's E-Mart</div>
+            <div class="col-12 page-title" style="background-color:#153448;">Reddy's E-Mart</div>
         </div>
         <div class="row">
-            <div class="col-12" style="background-color:#35374B;">
+            <div class="col-12" style="background-color:#153448;">
                 <div class="d-flex navigation-list">
-                    <a href="#" class="btn btn-outline-primary item-gap text-white">Home</a>
-                    <a href="About.html" class="btn btn-outline-warning item-gap text-white">About us</a>
-                    <a href="#contact" class="btn btn-outline-danger item-gap text-white">Contact Us</a>
-                    <input placeholder=" Search here" >
-                    <button class="bg-dark">Search</button>
+                    <div class="tex">
+                    <a href="#" class="btnn  ">Home</a>
+                    <a href="About.html" class="btnn ">About us</a>
+                    <a href="#contact" class="btnn ">Contact Us</a>
+                </div>
+                    <input placeholder=" Search here" class="plc">
+                    <!-- <button class="nn " style="background-color: #153448;">Search</button> -->
                     <a class="image-link" href="cart.html">
                         <img src="images/cart img.jpg" alt=".">
                     </a>
@@ -144,8 +184,8 @@ footer {
     <!-- Page Content -->
     <div class="container">
 
-        <center <P class="mt-4 text-black" style="font-size: xx-large;font-weight: bolder;  ">Welcome to Our E-Commerce Store!</P>
-        <center <p class="lead text-black" style="font-size: x-large;font-weight: bold;">Check out our latest products below:</p>
+        <center <P class="mt-4 " style="font-size: x-large;font-weight: bolder;color: #153448;  ">Welcome to Our E-Commerce Store!</P>
+        <center <p class="lead " style="font-size: x-large;font-weight: bold;color: #153448;">Check out our latest products below:</p>
 
         <!-- slideshow -->
         <div id="slideshow-container"> 
