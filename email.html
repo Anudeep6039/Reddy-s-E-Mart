@@ -32,15 +32,15 @@
         margin: 10px;
         padding: 20px;
         outline: none;
-        background: rgb(220, 221, 215);
+        background: #C9D7DD;
         font-size: 16px;
         width: 100%; /* Make input fields full-width */
         box-sizing: border-box; /* Include padding and border in width */
     }
     form button {
         padding: 15px;
-        background: #f0cf15;
-        color:black;
+        background: #153448;
+        color:rgb(255, 255, 255);
         font-size: 18px;
         border: 0;
         outline: none;
@@ -54,11 +54,11 @@
 <body>
     <div class="container">
         <form onsubmit="sendEmail(); reset();return false;">
-            <h3>Order Us By Email</h3>
-            <input type="text" id="sendername" placeholder="Your name" required>
-            <input type="email" id="to" placeholder="Your email" required>
+            <h1 style="color: #153448;">Order Us By Email</h1>
+            <input type="text" id="sendername" placeholder="Your Name" required>
+            <input type="email" id="to" placeholder="Your Email" required>
             <input type="number" id="Phone_number" placeholder="Your Phone Number">
-            <input type="text" id="Device_name" placeholder="Coupon code: ">
+            <input type="text" id="Device_name" placeholder="Your Address: ">
             <textarea id="subject" rows="4" placeholder="Tell us"></textarea><br />
             <button type="submit">Submit</button>
         </form>
